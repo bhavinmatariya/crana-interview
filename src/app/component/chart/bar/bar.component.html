@@ -1,0 +1,8 @@
+<div>
+    <canvas #chart baseChart height="450" [data]="data" [options]="barChartOptions" [plugins]="barChartPlugins"
+        [legend]="barChartLegend" [type]="'bar'">
+    </canvas>
+</div>
+<div class="align-center">
+    <button (click)="pushOne()">Add New Data +</button>
+</div>

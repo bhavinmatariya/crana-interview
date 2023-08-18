@@ -1,0 +1,4 @@
+<div *ngFor="let item of data">
+    <input type="text" [(ngModel)]="item['name']" />
+    <p>{{item['description']}}</p>
+</div>

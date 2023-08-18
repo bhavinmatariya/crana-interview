@@ -1,0 +1,3 @@
+<app-child [data]="data$ | async"></app-child>
+<div *ngFor="let item of data$ | async">{{item.name}}</div>
+<button (click)="addNewItem()">Add New Item</button>

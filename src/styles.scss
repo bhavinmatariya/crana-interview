@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: sans-serif;
+}
+
+select {
+    width: 200px;
+    height: 39px;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+button {
+    margin: 15px;
+    background-color: #00a5ff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+
+.align-center {
+    text-align: center;
+}

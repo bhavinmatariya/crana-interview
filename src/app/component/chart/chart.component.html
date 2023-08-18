@@ -1,0 +1,11 @@
+<label for="chart-selection">Select Chart:</label>
+<select name="chart-type" id="chart-selection" [(ngModel)]="selectedChartType">
+    <option [value]="chartTypes.LINE">Line</option>
+    <option [value]="chartTypes.PIE">Pie</option>
+    <option [value]="chartTypes.BAR">Bar</option>
+</select>
+<div class="wrapper" [ngSwitch]="selectedChartType">
+    <app-line *ngSwitchCase="chartTypes.LINE"></app-line>
+    <app-pie *ngSwitchCase="chartTypes.PIE"></app-pie>
+    <app-bar *ngSwitchCase="chartTypes.BAR"></app-bar>
+</div>
